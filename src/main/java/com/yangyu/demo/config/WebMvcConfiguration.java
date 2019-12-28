@@ -28,12 +28,11 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     }
     @Override
     protected void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName( "loveOne" );
+        registry.addViewController("/love").setViewName( "loveOne" );
         registry.addViewController("/Two").setViewName( "loveTwo" );
         registry.addViewController("/page").setViewName( "page" );
-        registry.addViewController("/photo").setViewName( "photo2" );
-        registry.addViewController("/3dindex").setViewName( "3dindex" );
         registry.addViewController("/sakura").setViewName( "sakura" );
+
         super.addViewControllers(registry);
     }
 
